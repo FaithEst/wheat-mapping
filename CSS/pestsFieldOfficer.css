@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* section ONE STARTS here */
+.sectionOne{
+    width: 100%;
+    height: 100vh;
+}
+.navBar{
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+}
+/* nav bar links.... Home Home LOg Out */
+.navBarLInk{
+    text-decoration: none;
+    cursor: pointer;
+    color: rgb(0, 0, 0, 0.5);
+}
+/* nav bar ul */
+.navBarList{
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+}
+/* nav bar ul li */
+.navBarList li{
+    margin: 0 20px 0 20px;
+    font-weight: bold;
+    font-size: 17px;
+}
+/* div containing div with profile pic */
+.withProfile{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+/*div with profile pic */
+.profileImage{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url(/Images/man.jpg);
+    background-size: cover;   
+}
+/* div with the heading */
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+/* welcome back heading */
+.pestDiseases{
+    color: #796829;
+    line-height: normal;
+    font-size: 40px;
+    font-weight: 540;
+}
+/* div containing all other divs */
+.main{
+    width: 70%;
+    margin: auto;
+    height: 70%;
+    display: flex;
+    margin-top: 4em;
+}
+/* div containing the yellow image */
+.yellowSide{
+    width: 15%;
+    height: 64vh;
+    display: flex;
+    justify-content: center;
+}
+/* div containing input form */
+.rightSide{
+    width: 85%;
+    height: 64vh;
+    background-color: white;
+    position: relative;
+}
+/* contains div for name and inputs */
+.main2{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+/* div for input */
+.input{
+    width: 60%;
+}
+/* select tag*/
+.inputValue{
+    width: 100%;
+    border-style: none;
+    background-color: white;
+    border: none;
+    border-bottom: solid 2px rgb(0, 0, 0, 0.3);
+    font-size: 16px;
+    color: #999;
+}
+/* div for name */
+.name{
+    font-size: 20px;
+}
+/* div for edit */
+.edit{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: aqua;
+}
+.edit a{
+    color: rgb(0, 0, 0, 0.5);
+}
+/* div for uploading image */
+.uploadImage{
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.uploadImage h3{
+    line-height: 1.6;
+    font-weight: 500;
+}
+/* div with both rectangle and vector */
+.container{
+    width: 100%;
+    /* display: flex;
+    justify-content: right; */
+}
+/* div with upload vector div and has a bg color */
+.rectangle{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(193, 220, 224, 0.2);
+    border-style: dashed;
+    border-width: 4px;
+    border-color: rgb(0, 0, 0, 0.3);
+}
+/* color for svg */
+.change-color{
+    fill: rgb(121, 104, 41, 0.5);
+}
+/* div with 2 buttons */
+.with2Btns{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; 
+}
+/* button */
+.btn1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-style: none;
+    background-color: rgb(121, 104, 41, 0.7);
+    padding: 9px 35px 9px 35px;
+    cursor: pointer;
+}
+
+/* responsive for mobile */
+@media only screen and (max-width: 600px){
+   .sectionOne{
+       height: 100%;
+   } 
+   /* welcome back heading */
+   .pestDiseases{
+       font-size: 30px;
+   }
+   /* div containing all other divs */
+   .main{
+    margin-top: 1em; 
+    width: 95%;
+   }
+   /* div containing the yellow image */
+   .yellowSide{
+       display: none;
+   }
+   /* div containing input form */
+   .rightSide{
+       width: 100%;
+       height: 60vh;
+   }
+   /* div for name */
+   .name, h3{
+       font-size: 15px;
+   }
+   /* select tag*/
+   .inputValue{
+       font-size: 13px;
+   }
+   /* div for uploading image */
+   .uploadImage{
+       width: 100%;
+   }
+   /* div with upload vector div and has a bg color */
+   .rectangle{
+       height: 190px;
+   }
+   /* div with 2 buttons */
+   .with2Btns{
+       width: 100%;
+       justify-content: center;
+       flex-direction: column;
+       margin-top: 35px;
+   }
+   /* button */
+   .btn1{
+       margin-bottom: 10px;
+   }
+}
+/* for tablets */
+@media only screen and (max-width: 768px) and (min-width: 601px){
+    .sectionOne{
+        height: 100vh;
+    }
+    /* div containing input form */
+   .rightSide{
+    width: 100%;
+    height: 90vh;
+   }
+   /* div for name */
+   .name{
+       font-size: 15px;
+   }
+    /* welcome back heading */
+   .pestDiseases{
+    font-size: 35px;
+   }
+   /* div containing input form */
+   .rightSide{
+    width: 100%;
+    height: 60vh;
+    }
+    /* div containing the yellow image */
+   .yellowSide{
+    display: none;
+    }
+    /* div for uploading image */
+   .uploadImage{
+    width: 100%;
+   }
+    /* div with upload vector div and has a bg color */
+   .rectangle{
+    height: 200px;
+   }
+    /* div with 2 buttons */
+   .with2Btns{
+       width: 90%;
+       justify-content: center;
+       flex-direction: column;
+   }
+   /* button */
+   .btn1{
+    margin-bottom: 15px;
+}
+}
